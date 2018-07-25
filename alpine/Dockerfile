@@ -14,6 +14,7 @@ RUN set -ex && \
     apk del wget
 
 RUN chgrp -R 0 /opt/traccar/logs && chmod -R g=u /opt/traccar/logs
+RUN chgrp -R 0 /opt/traccar/data && chmod -R g=u /opt/traccar/data
 
 EXPOSE 8082
 
