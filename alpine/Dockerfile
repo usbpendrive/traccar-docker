@@ -4,6 +4,8 @@ ENV TRACCAR_VERSION 3.17
 
 WORKDIR /opt/traccar
 
+RUN chgrp -R 0 /opt/traccar/logs && chmod -R g=u /opt/traccar/logs
+
 RUN set -ex && \
     apk add --no-cache wget && \
     \
