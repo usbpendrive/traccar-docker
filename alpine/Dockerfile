@@ -16,7 +16,7 @@ RUN set -ex && \
 RUN chgrp -R 0 /opt/traccar/logs && chmod -R g=u /opt/traccar/logs
 RUN chgrp -R 0 /opt/traccar/data && chmod -R g=u /opt/traccar/data
 
-EXPOSE 8082
+EXPOSE 8080
 
 ENTRYPOINT ["java"]
 
