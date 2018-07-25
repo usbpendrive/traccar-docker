@@ -7,7 +7,7 @@ WORKDIR /opt/traccar
 RUN set -ex && \
     apk add --no-cache wget && \
     \
-    wget -qO /tmp/traccar.zip https://github.com/tananaev/traccar/releases/download/v$TRACCAR_VERSION/traccar-other-$TRACCAR_VERSION.zip && \
+    wget -qO /tmp/traccar.zip https://github.com/usbpendrive/traccar-release/archive/traccar-3.17.zip && \
     unzip -qo /tmp/traccar.zip -d /opt/traccar && \
     rm /tmp/traccar.zip && \
     \
